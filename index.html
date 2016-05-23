@@ -1,0 +1,286 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<script>
+  function appendOrder() {
+    $('<div style="width: 100%;height: 30px;margin-bottom: 1px;font-size: 10px;background-color: rgba(92, 184, 92, 0.317647);padding-top: 7px;padding-left: 9px;">Table 3 ordered: 1 BaconBurguer (+ extra cheese), 3 CheeseBurger, ...</div>').appendTo('.orders');
+  }
+</script>
+<body style="min-width: 1300px">
+<h3 style="text-align: center; font-size: 100; font-family: 'Pacifico', cursive;">fuwu</h3>
+<h4 style="text-align: center; font-size: 30;     text-align: center;
+    font-size: 21px;
+    margin-top: 25px;">Make your orders FASTER!</h4>
+
+<span class="monitor" style="
+    position: relative;
+    width: 600px;
+    height: 486px;
+    margin-left: 140px;
+    display: inline-block;
+    margin-bottom: 36px;
+    background-size: cover;
+    background-image: url('monitor.png');
+    ">
+  <span class="monitor-screen" style="
+    width: 508px;
+    height: 319px;
+    position: absolute;
+    top: 25px;
+    left: 46px;
+">
+    <span class="initial-mon-screen">
+      <span class="header" style="
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+">
+        <h3 style="/* text-align: center; */font-size: 15px;position: absolute;color: #F5F5F5;font-family: 'Pacifico', cursive;top: -10px;margin-left: 9px;border-right: 1px solid white;width: 38px;">fuwu</h3>
+        <span style="
+    position: absolute;
+    color: #F5F5F5;
+    top: 0px;
+    left: 53px;
+    font-size: 10;
+    top: 12px;
+">BurguerMoode Console</span>
+      </span>
+      <span class="sideBar" style="height: 279px;
+    width: 75px;
+    background-color: #E8E8E8;
+    position: absolute;
+    top: 40px;">
+        <span style="
+    position: absolute;
+    top: 14px;
+    left: 31px;
+    font-size: 12px;
+">Orders</span>
+        <span style="
+            position: absolute;
+            top: 37px;
+            left: 19px;
+            font-size: 12px;
+">Analytics</span>
+      </span>
+      <span class="orders-container" style="
+    display: block;
+    position: absolute;
+    background-color: rgba(252,248,227,0.18);
+    top: 40px;
+    right: 0;
+    left: 75px;
+    bottom: 0px;
+">
+    <h3 style="    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 15px;">New Orders</h3>
+    <span class="orders" style="
+    width: 381px;
+    overflow: auto;
+    height: 208px;
+    display: block;
+    margin-left: 23px;
+    border: 1px solid rgba(119, 119, 119, 0.31);
+">
+    </span>
+</span>
+      <span class="analytics-container"style="
+    display: none;
+    position: absolute;
+    background-color: rgba(252,248,227,0.18);
+    top: 40px;
+    right: 0;
+    left: 75px;
+    bottom: 0px;
+"></span>
+    </span>
+  </span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+<span class="cell" style="
+    position: relative;
+    width: 320px;
+    height: 634px;
+    margin-left: 58px;
+    display: inline-block;
+    display: inline-block;
+    background-size: cover;
+    margin-top: 34px;
+    background-image: url('celu.jpg');
+    ">
+  <span class="cell-screen" style="
+  width: 270px;
+height: 406px;
+position: absolute;
+top: 102px;
+left: 25px;">
+
+    <span class="make-order-cell-screen">
+      <h3 style="text-align: center; font-size: 30; font-family: 'Pacifico', cursive;">fuwu</h3>
+      <h5 style="margin-left: 10px; margin-top: 20px;">Make your order:</h5>
+
+      <span class="item" style="
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: rgba(0, 128, 0, 0.05);
+">
+        <span class="image" style="
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 14px;
+    background-size: cover;
+    background-image: url('baconburguer.png');
+    left: 3px;
+"></span>
+        <span class="text" style="
+        position: absolute;
+        top: 14px;
+        left: 85px;
+        font-size: 16px;
+">Bacon Burguer</span>
+        <select class="form-control" style="
+
+    position: absolute;
+    width: 47px;
+    top: 51px;
+    left: 175px;
+">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <i class="fa fa-plus" style="
+    position: absolute;
+    top: 51px;
+    font-size: 35px;
+    right: 7px;
+    width: 30px;
+    height: 30px;
+"></i>
+<i class="fa fa-star" style="    font-size: 26px;
+    top: 11px;
+    position: absolute;
+    right: 11px;
+    color: #f0ad4e;"></i>
+      </span>
+
+      <span class="item" style="
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: block;
+    top: 199px;
+    background-color: rgba(0, 128, 0, 0.05);
+">
+        <span class="image" style="
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 14px;
+    background-size: contain;
+    background-image: url('cheeseburguer.png');
+    background-repeat: no-repeat;
+    left: 3px;
+"></span>
+        <span class="text" style="
+        position: absolute;
+        top: 14px;
+        left: 85px;
+        font-size: 16px;
+">Cheesse Burguer</span>
+        <select class="form-control" style="
+
+    position: absolute;
+    width: 47px;
+    top: 51px;
+    left: 175px;
+">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <i class="fa fa-plus" style="
+    position: absolute;
+    top: 51px;
+    font-size: 35px;
+    right: 7px;
+    width: 30px;
+    height: 30px;
+"></i>
+<i class="fa fa-star-half" style="    font-size: 26px;
+    top: 11px;
+    position: absolute;
+    right: 22px;
+    color: #f0ad4e;"></i>
+      </span>
+
+      <span class="controls" style="
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    background-color: #eee;
+    bottom: 0px;
+">
+        <button type="button" class="btn btn-success"
+        onclick="appendOrder();"
+        style="
+
+    /* margin-top: 10px; */
+    position: absolute;
+    top: 10px;
+    right: 163px;
+    height: 43px;
+    width: 96px;
+">Order</button>
+        <button type="button" class="btn btn-warning" style="
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    height: 43px;
+    width: 120px;
+">Call Waitress</button>
+      </span>
+    </span>
+
+  </span>
+</span>
+
+
+
+
+
+</body>
+</html>
