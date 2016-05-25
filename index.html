@@ -15,8 +15,25 @@
 </head>
 <script>
   function appendOrder() {
+    if ($('select#cheese').val() == 0 && $('select#bacon').val() == 0) {
+      window.setTimeout(function() {
+        $('.error').fadeIn('slow');
+        window.setTimeout(function() {
+          $('.error').fadeOut('slow');
+        }, 3000);
+      }, 300);
+      return;
+    }
+
     setTimeout(function() {
-      $('<div style="width: 100%;height: 30px;margin-bottom: 1px;font-size: 10px;background-color: rgba(92, 184, 92, 0.317647);padding-top: 7px;padding-left: 9px;">Table 3 ordered: 1 BaconBurguer (+ extra cheese), 3 CheeseBurger, ...</div>').appendTo('.orders');
+      var order = '';
+      if ($('select#cheese').val() > 0) {
+         order += $('select#cheese').val() + ' Cheese Burguer, ';
+      }
+      if ($('select#bacon').val() > 0) {
+         order += $('select#bacon').val() + ' Bacon Burguer, ';
+      }
+      $('<div style="width: 100%;height: 30px;margin-bottom: 1px;font-size: 10px;background-color: rgba(92, 184, 92, 0.317647);padding-top: 7px;padding-left: 9px;">Table ' + Math.floor((Math.random() * 10) + 1) +' ordered: ' + order + '</div>').appendTo('.orders');
     }, 500);
     window.setTimeout(function() {
       $('.notification').fadeIn('slow');
@@ -110,13 +127,6 @@
 ">of their order on live.</span>
 
 </span>
-
-
-
-
-
-
-
 
 <span class="monitor" style="
     position: relative;
@@ -260,7 +270,7 @@ left: 25px;">
         left: 85px;
         font-size: 16px;
 ">Bacon Burguer</span>
-        <select class="form-control" style="
+        <select class="form-control" id="bacon" style="
 
     position: absolute;
     width: 47px;
@@ -313,7 +323,7 @@ left: 25px;">
         left: 85px;
         font-size: 16px;
 ">Cheesse Burguer</span>
-        <select class="form-control" style="
+        <select class="form-control" id="cheese" style="
 
     position: absolute;
     width: 47px;
@@ -369,6 +379,32 @@ left: 25px;">
 ">Call Waitress</button>
       </span>
 
+
+<span class="error" style="
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: #D9534F;
+    color: #fafafa;
+    top: 256px;">
+        <i class="fa fa-times" style="
+    font-size: 46px;
+    top: 21px;
+    position: absolute;
+    left: 33px;
+"></i>
+        <span style="
+    position: absolute;
+    top: 22px;
+    left: 83px;
+">You must select the <strong>amount</strong></span>
+        <span style="
+    position: absolute;
+    left: 83px;
+    top: 42px;
+">of food to order</span>
+    </span>
 
 <span class="notification" style="
     display: none;
